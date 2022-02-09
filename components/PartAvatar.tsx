@@ -51,8 +51,10 @@ const PartAvatar: React.FC<Props> = () => {
           className="rounded"
         />
         <div className="z-5 absolute right-0 bottom-[20px] left-0">
-          <span className="bg-[#f8f6e7] px-2 text-4xl font-bold">危建翰</span>
-          <p className="z-2 relative left-12 bg-[#f8f6e7] p-2 text-3xl font-extrabold text-black">
+          <span className="absolute left-[-10px] bottom-[45px] block rounded-r-lg bg-[#f8f6e7] p-2 text-4xl font-bold">
+            危建翰
+          </span>
+          <p className="z-2 relative left-12 rounded-l-lg bg-[#f8f6e7] p-2 text-3xl font-extrabold text-black">
             Front End Dev
           </p>
         </div>

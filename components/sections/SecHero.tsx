@@ -30,7 +30,7 @@ const SecHero = () => {
       <ConditionallyRender client>
         <Particles
           amount={50}
-          colors={['#7d0ae9', '#0004ff', '#f8f6e7']}
+          colors={['#7d0ae9', '#0004ff', '#d1c522']}
           size={'medium'}
           speed={'medium'}
           blur={2}

@@ -15,13 +15,11 @@ interface IProp {
 const workCardVariants = {
   hidden: {
     opacity: 0,
-    translateX: -50,
-    translateY: -50
+    translateX: -50
   },
   visible: {
     opacity: 1,
     translateX: 0,
-    translateY: 0,
     transition: {
       duration: 0.5,
       type: 'easeInOut'
