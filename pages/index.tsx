@@ -14,7 +14,15 @@ const Home: NextPage<Props> = ({ imgLink }) => {
   return (
     <>
       <Head>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://devhank.vercel.app/" />
+        <meta property="og:title" content="DevHank" />
+        <meta property="og:description" content="Front End Developer" />
         <meta property="og:image" content={imgLink} />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://devhank.vercel.app/" />
+        <meta property="twitter:title" content="DevHank" />
+        <meta property="twitter:description" content="Front End Developer" />
         <meta property="twitter:image" content={imgLink} />
       </Head>
       <MainContainer>
