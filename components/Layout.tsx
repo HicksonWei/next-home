@@ -1,25 +1,16 @@
 import React, { ReactNode } from 'react'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import Head from 'next/head'
 import AppContainer from './AppContainer'
-import { getOgImageLink } from '../services'
 
 type Props = {
   children?: ReactNode
 }
 
 const Layout: React.FC<Props> = ({ children }) => {
-  const [ogImageLink, setOgImageLink] = useState('')
-
   useEffect(() => {
     // 避免 refresh 時，頁面不會自動滾動到頂端
     window.history.scrollRestoration = 'manual'
-  }, [])
-
-  useEffect(() => {
-    getOgImageLink().then(result => {
-      setOgImageLink(result[0].social.url)
-    })
   }, [])
 
   return (
@@ -41,13 +32,11 @@ const Layout: React.FC<Props> = ({ children }) => {
         <meta property="og:url" content="https://devhank.vercel.app/" />
         <meta property="og:title" content="DevHank" />
         <meta property="og:description" content="Front End Developer" />
-        <meta property="og:image" content={ogImageLink} />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://devhank.vercel.app/" />
         <meta property="twitter:title" content="DevHank" />
         <meta property="twitter:description" content="Front End Developer" />
-        <meta property="twitter:image" content={ogImageLink} />
       </Head>
       <AppContainer>{children}</AppContainer>
     </>
