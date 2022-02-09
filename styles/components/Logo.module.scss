@@ -1,0 +1,79 @@
+.logo {
+  animation: fill-text 0.5s ease forwards 2.2s;
+}
+.logo > path:nth-of-type(1){
+  stroke-dasharray: 202.01;
+  stroke-dashoffset: 202.01;
+  stroke-linecap: round;
+  animation: line-anim 2s ease forwards;
+}
+.logo > path:nth-of-type(2){
+  stroke-dasharray: 413;
+  stroke-dashoffset: 413;
+  stroke-linecap: round;
+  animation: line-anim 2s ease forwards;
+}
+.logo > path:nth-of-type(3){
+  stroke-dasharray: 325;
+  stroke-dashoffset: 325;
+  stroke-linecap: round;
+  animation: line-anim 2s ease forwards;
+}
+.logo > path:nth-of-type(4){
+  stroke-dasharray: 230;
+  stroke-dashoffset: 230;
+  stroke-linecap: round;
+  animation: line-anim 2s ease forwards;
+}
+.logo > path:nth-of-type(5){
+  stroke-dasharray: 401;
+  stroke-dashoffset: 401;
+  stroke-linecap: round;
+  animation: line-anim 2s ease forwards;
+}
+.logo > path:nth-of-type(6){
+  stroke-dasharray: 322;
+  stroke-dashoffset: 322;
+  stroke-linecap: round;
+  animation: line-anim 2s ease forwards;
+}
+.logo > path:nth-of-type(7){
+  stroke-dasharray: 294;
+  stroke-dashoffset: 294;
+  stroke-linecap: round;
+  animation: line-anim 2s ease forwards;
+}
+.logo > path:nth-of-type(8){
+  stroke-dasharray: 327;
+  stroke-dashoffset: 327;
+  stroke-linecap: round;
+  animation: line-anim 2s ease forwards;
+}
+.logo > path:nth-of-type(9){
+  stroke-dasharray: 194;
+  stroke-dashoffset: 194;
+  stroke-linecap: round;
+  animation: line-anim 2s ease forwards;
+}
+.logo > path:nth-of-type(10){
+  stroke-dasharray: 203;
+  stroke-dashoffset: 203;
+  stroke-linecap: round;
+  animation: line-anim 2s ease forwards;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-text{
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+}
